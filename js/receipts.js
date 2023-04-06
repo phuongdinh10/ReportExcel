@@ -41,7 +41,7 @@ $("#printPage").click(function(){
 function render()
 {
     let lstDataResult = localStorage.getItem("lstDataReport");
-    if(lstDataResult != null)
+    if(lstDataResult != null && lstDataResult != 'null')
     {
         var result = JSON.parse(lstDataResult);
         result.forEach(function(item){
